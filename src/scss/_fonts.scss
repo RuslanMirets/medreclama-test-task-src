@@ -1,0 +1,13 @@
+@include font-face(
+  "Commissioner",
+  "../fonts/Commissioner-Regular",
+  400,
+  normal
+);
+@include font-face("Commissioner", "../fonts/Commissioner-Medium", 500, normal);
+@include font-face(
+  "Commissioner",
+  "../fonts/Commissioner-SemiBold",
+  600,
+  normal
+);
