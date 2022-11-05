@@ -8,10 +8,9 @@
   width: 100%;
 
   &__title {
+    margin-bottom: 0;
     border-bottom: 1px solid $border-color;
     padding: 5px;
-    font-size: 24px;
-    line-height: 30px;
     text-align: center;
     background-color: $bg-gray-color;
   }
@@ -120,7 +119,7 @@
     display: none;
     padding: 20px;
 
-    &-img {
+    &-image {
       margin-bottom: 20px;
     }
 

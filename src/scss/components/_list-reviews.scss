@@ -1,0 +1,16 @@
+.list-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  li {
+    border-radius: 20px;
+    padding: 14px;
+    background-color: $bg-gray-color;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgb(169 179 191 / 20%);
+    }
+  }
+}

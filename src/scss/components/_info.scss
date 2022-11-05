@@ -1,0 +1,11 @@
+.info {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333%);
+    gap: 20px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+}

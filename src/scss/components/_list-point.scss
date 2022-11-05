@@ -1,0 +1,28 @@
+.list-point {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    min-height: 40px;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      color: $blue-color;
+      background: $light-gray-color;
+    }
+  }
+}
