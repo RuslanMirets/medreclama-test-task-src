@@ -50,8 +50,10 @@
     color: $black-color;
     transition: color 0.3s;
 
-    &:hover {
-      color: $border-color;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $border-color;
+      }
     }
   }
 
