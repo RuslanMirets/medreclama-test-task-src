@@ -1,4 +1,4 @@
-<section class="promo section-offset">
+<section class="promo">
   <div class="promo__container container">
     <picture class="promo__image">
       <source srcset="img/promo.avif" type="image/avif" />
@@ -37,22 +37,24 @@
         <div class="form__group">
           <input
             class="form__input input-name input-reset"
+            id="input-name"
             type="text"
             name="Имя"
             onkeyup="this.setAttribute('value', this.value);"
             value=""
           />
-          <label class="form__label">Имя Фамилия</label>
+          <label class="form__label" for="input-name">Имя Фамилия</label>
         </div>
         <div class="form__group">
           <input
             class="form__input input-tel input-reset"
+            id="input-tel"
             type="tel"
             name="Телефон"
             onkeyup="this.setAttribute('value', this.value);"
             value=""
           />
-          <label class="form__label">Контактный телефон</label>
+          <label class="form__label" for="input-tel">Контактный телефон</label>
         </div>
         <button class="form__btn btn btn-reset">Отправить заявку</button>
       </div>

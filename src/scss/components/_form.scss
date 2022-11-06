@@ -43,7 +43,7 @@
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -83,7 +83,7 @@
     }
 
     &.just-validate-error-field {
-      border-color: $error-color;
+      border-color: $red-color;
       padding-right: 40px;
       box-shadow: none;
       background-image: url("../img/error.svg");

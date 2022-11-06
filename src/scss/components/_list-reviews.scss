@@ -4,9 +4,9 @@
   gap: 18px;
 
   li {
+    border: 1px solid #e0e3e8;
     border-radius: 20px;
     padding: 14px;
-    background-color: $bg-gray-color;
     transition: box-shadow 0.3s;
 
     &:hover {
