@@ -1,11 +1,21 @@
 .info {
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
-    gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+      border-bottom: 1px solid $bg-gray-color;
+      padding-bottom: 20px;
+    }
   }
 }

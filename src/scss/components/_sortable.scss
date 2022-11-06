@@ -1,3 +1,7 @@
 .sortable-title {
   cursor: pointer;
+
+  @media (max-width: 991px) {
+    pointer-events: none;
+  }
 }

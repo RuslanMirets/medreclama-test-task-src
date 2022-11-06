@@ -4,11 +4,19 @@
   }
 
   &__content {
-    // padding: 0 60px;
-    width: 75%;
+    width: calc(100% - 100px);
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     @media (any-hover: hover) {
       &:hover {
         .specialists__image {
@@ -20,6 +28,10 @@
         }
       }
     }
+
+    @media (max-width: 575px) {
+      max-width: 300px;
+    }
   }
 
   &__image {
@@ -28,11 +40,17 @@
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 20px;
-    width: 145px;
-    height: 144px;
+    width: 100%;
+    max-width: 145px;
     background: #edeff2;
     transition: box-shadow 0.3s;
     will-change: transform;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 120%;
+    }
 
     img {
       position: absolute;
@@ -43,10 +61,15 @@
       backface-visibility: hidden;
       transition: transform 0.3s;
     }
+
+    @media (max-width: 1199px) {
+      max-width: 100%;
+    }
   }
 
   &__name {
     font-weight: 600;
+    text-align: center;
     color: $black-color;
     transition: color 0.3s;
 
@@ -61,10 +84,19 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 52px;
+    top: 30%;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media (max-width: 1199px) {
+      top: 40%;
+    }
+
+    @media (max-width: 575px) {
+      margin: 0 auto;
+      max-width: 400px;
+    }
   }
 
   &__slider-btn {

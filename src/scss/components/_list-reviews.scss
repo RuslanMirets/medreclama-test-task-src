@@ -1,12 +1,14 @@
 .list-reviews {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 18px 20px;
 
   li {
+    flex-grow: 1;
     border: 1px solid #e0e3e8;
     border-radius: 20px;
     padding: 14px;
+    height: 100%;
     transition: box-shadow 0.3s;
 
     @media (any-hover: hover) {
